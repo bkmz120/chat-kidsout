@@ -1,0 +1,69 @@
+.collocutorBar {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100%;
+  position:relative;
+
+  &__user {
+    flex:1;
+    text-align:center;
+  }
+
+  &__user-name {
+    font-size:15px;
+    line-height:22px;
+    color:#000;
+  }
+
+  &__user-status {
+    font-size: 12px;
+    line-height: 17px;
+    color: #898989;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      vertical-align: top;
+      border-radius: 50%;
+      width: 1em;
+      height: 1em;
+      margin-right: 0.4em;
+      margin-top: 0.2em;
+      transform: scale(0.8);
+    }
+
+    &_online {
+      &:before {
+        background-color: #5dcb8e;
+      }
+    }
+  }
+
+  &__ctrls {
+    position:absolute;
+    right:0;
+    line-height:25px;
+  }
+
+  &__profileLink {
+    vertical-align:top;
+    color:#78b5ff;
+    text-decoration:none;
+    font-size:15px;
+  }
+
+  &__togglFav {
+    margin-left:24px;
+
+    &:before {
+      content:"\f006";
+      font-size:25px;
+      display:inline-block;
+      font-family:FontAwesome;
+      color: #898989;
+      cursor:pointer;
+    }
+  }
+
+}

@@ -1,0 +1,131 @@
+.baseLayout {
+  position: relative; }
+  .baseLayout__navbar {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    height: 67px; }
+  .baseLayout__content {
+    width: 1250px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 67px;
+    box-sizing: border-box; }
+.collocutorBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative; }
+  .collocutorBar__user {
+    flex: 1;
+    text-align: center; }
+  .collocutorBar__user-name {
+    font-size: 15px;
+    line-height: 22px;
+    color: #000; }
+  .collocutorBar__user-status {
+    font-size: 12px;
+    line-height: 17px;
+    color: #898989; }
+    .collocutorBar__user-status:before {
+      content: "";
+      display: inline-block;
+      vertical-align: top;
+      border-radius: 50%;
+      width: 1em;
+      height: 1em;
+      margin-right: 0.4em;
+      margin-top: 0.2em;
+      transform: scale(0.8); }
+    .collocutorBar__user-status_online:before {
+      background-color: #5dcb8e; }
+  .collocutorBar__ctrls {
+    position: absolute;
+    right: 0;
+    line-height: 25px; }
+  .collocutorBar__profileLink {
+    vertical-align: top;
+    color: #78b5ff;
+    text-decoration: none;
+    font-size: 15px; }
+  .collocutorBar__togglFav {
+    margin-left: 24px; }
+    .collocutorBar__togglFav:before {
+      content: "\F006";
+      font-size: 25px;
+      display: inline-block;
+      font-family: FontAwesome;
+      color: #898989;
+      cursor: pointer; }
+.chatArea {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 11px; }
+  .chatArea__collocutorBar {
+    height: 70px;
+    border-bottom: 1px solid #d3d3d3;
+    margin-right: 10px; }
+  .chatArea__messagesList {
+    flex: 1; }
+  .chatArea__newMessage {
+    margin-rifht: 10px;
+    border-top: 1px solid #d3d3d3;
+    height: 66px; }
+.chatPage {
+  display: flex;
+  width: 100%;
+  height: 100%; }
+  .chatPage__contacts {
+    width: 320px;
+    background-color: #eee; }
+  .chatPage__chatArea {
+    flex: 1; }
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+html {
+  height: 100%; }
+
+body {
+  background-color: #f6f6f6;
+  height: 100%;
+  font-family: Lato,Arial,Helvetica,sans-serif; }
+
+.full-height {
+  height: 100%; }

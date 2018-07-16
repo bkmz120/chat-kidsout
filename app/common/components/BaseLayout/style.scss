@@ -1,0 +1,20 @@
+.baseLayout {
+  position:relative;
+
+
+  &__navbar {
+    position:absolute;
+    background-color:#fff;
+    left:0;
+    right:0;
+    height:67px;
+  }
+
+  &__content {
+    width:1250px;
+    height:100%;
+    margin:0 auto;
+    padding-top:67px;
+    box-sizing: border-box;
+  }
+}
