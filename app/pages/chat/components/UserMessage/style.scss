@@ -1,0 +1,53 @@
+@import "colors.scss";
+
+.chatUserMessage {
+
+  margin-bottom:3px;
+
+  &_end {
+    margin-bottom:25px;
+  }
+
+  &_my {
+    text-align:right;
+  }
+
+  &_collocutor {
+
+  }
+
+  &__text {
+    display:inline-block;
+    max-width:260px;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size:14px;
+    text-align:left;
+
+    .chatUserMessage_first &{
+      border-radius:10px 10px 4px 4px;
+    }
+
+    .chatUserMessage_end &{
+      border-radius:4px 4px 10px 10px;
+    }
+
+    .chatUserMessage_first.chatUserMessage_end & {
+      border-radius:10px;
+    }
+
+    .chatUserMessage_my &{
+      background-color: $green;
+      color:#fff;
+      margin-left:10px;
+    }
+
+    .chatUserMessage_collocutor &{
+      background-color: #fff;
+      color:#333;
+      margin-right:10px;
+    }
+  }
+
+
+}

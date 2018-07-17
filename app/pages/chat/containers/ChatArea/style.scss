@@ -1,0 +1,40 @@
+@import "colors.scss";
+
+$collocutorBarHeight : 70px;
+$newMessageHeight : 66px;
+
+.chatArea {
+  position:relative;
+  height:100%;
+
+  &__collocutorBar {
+    position:relative;
+    z-index:2;
+    height:$collocutorBarHeight;
+    border-bottom:1px solid #d3d3d3;
+    margin-left:11px;
+    margin-right:25px;
+    background-color:$bgColor;
+  }
+
+  &__messagesList {
+    position:absolute;
+    top:$collocutorBarHeight;
+    left:0;
+    right:0;
+    bottom:$newMessageHeight;
+  }
+
+  &__newMessage {
+    position:absolute;
+    z-index:2;
+    bottom:0;
+    right:0;
+    left:0;
+    margin-left:11px;
+    margin-right:25px;
+    border-top:1px solid #d3d3d3;
+    height:$newMessageHeight;
+  }
+
+}

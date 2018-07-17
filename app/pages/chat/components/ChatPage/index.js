@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import {connect} from "react-redux";
 
 import BaseLayout from "Common/components/BaseLayout";
-import ChatArea from "Pages/chat/components/ChatArea";
+import ChatArea from "Pages/chat/containers/ChatArea";
 import "./style.scss";
 
-class ChatPage extends Component {
+export default class ChatPage extends Component {
   render() {
 
     return (
@@ -21,16 +20,3 @@ class ChatPage extends Component {
     );
   }
 }
-const mapStateToProps = (state, ownProps) => {
-  return {
-
-  };
-}
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-
-  }
-}
-
-export default connect(mapStateToProps,mapDispatchToProps)(ChatPage);

@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 .collocutorBar {
   display:flex;
   justify-content:center;
@@ -35,7 +37,13 @@
 
     &_online {
       &:before {
-        background-color: #5dcb8e;
+        background-color: $green;
+      }
+    }
+
+    &_offline {
+      &:before {
+        background-color: $red;
       }
     }
   }
@@ -63,6 +71,12 @@
       font-family:FontAwesome;
       color: #898989;
       cursor:pointer;
+    }
+
+    &:hover {
+      &:before {
+        color: $green;
+      }
     }
   }
 
