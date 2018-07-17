@@ -1,7 +1,7 @@
 @import "colors.scss";
 
 .chatUserMessage {
-
+  position:relative;
   margin-bottom:3px;
 
   &_end {
@@ -46,8 +46,55 @@
       background-color: #fff;
       color:#333;
       margin-right:10px;
+      margin-left: 50px;
     }
   }
 
+  &__user-link {
+    position:absolute;
+    width:40px;
+    height:40px;
+    top: -0.5em;
+    left:0;
+  }
+
+  &__user-img {
+    display:block;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background-size:cover;
+  }
+
+  &__myStatus {
+    display: inline-block;
+    vertical-align: top !important;
+    line-height: 20px !important;
+    font-size:13px !important;
+
+    &_sending {
+      color:#c7c7c7;
+      margin-top: 0.4em;
+    }
+
+    &_sended {
+      margin-right:10px;
+      color:$green;
+    }
+
+    &_fail {
+      color:$red;
+    }
+  }
+
+  &__myStatus-ctrl {
+    color:#000;
+    cursor:pointer;
+    margin-right: 10px;
+
+    i {
+      font-size:16px !important;
+    }
+  }
 
 }

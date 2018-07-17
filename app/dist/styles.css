@@ -70,6 +70,7 @@
   font-size: 12px;
   line-height: 20px; }
 .chatUserMessage {
+  position: relative;
   margin-bottom: 3px; }
   .chatUserMessage_end {
     margin-bottom: 25px; }
@@ -95,7 +96,39 @@
     .chatUserMessage_collocutor .chatUserMessage__text {
       background-color: #fff;
       color: #333;
-      margin-right: 10px; }
+      margin-right: 10px;
+      margin-left: 50px; }
+  .chatUserMessage__user-link {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -0.5em;
+    left: 0; }
+  .chatUserMessage__user-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-size: cover; }
+  .chatUserMessage__myStatus {
+    display: inline-block;
+    vertical-align: top !important;
+    line-height: 20px !important;
+    font-size: 13px !important; }
+    .chatUserMessage__myStatus_sending {
+      color: #c7c7c7;
+      margin-top: 0.4em; }
+    .chatUserMessage__myStatus_sended {
+      margin-right: 10px;
+      color: #5dcb8e; }
+    .chatUserMessage__myStatus_fail {
+      color: #ff323a; }
+  .chatUserMessage__myStatus-ctrl {
+    color: #000;
+    cursor: pointer;
+    margin-right: 10px; }
+    .chatUserMessage__myStatus-ctrl i {
+      font-size: 16px !important; }
 .chatSystemMessage {
   text-align: center;
   margin-top: 45px;
@@ -122,10 +155,15 @@
       background-color: #5dcb8e; }
     .chatSystemMessage_fail .chatSystemMessage__text:before {
       background-color: #ff323a; }
+.daySeparator {
+  color: #c7c7c7;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 20px; }
 .chatMessagesList {
   padding: 20px 10px;
   height: 100%;
-  overflow-y: scroll;
   box-sizing: border-box; }
 .chatArea {
   position: relative;
@@ -136,7 +174,7 @@
     height: 70px;
     border-bottom: 1px solid #d3d3d3;
     margin-left: 11px;
-    margin-right: 25px;
+    margin-right: 12px;
     background-color: #f6f6f6; }
   .chatArea__messagesList {
     position: absolute;
@@ -151,7 +189,7 @@
     right: 0;
     left: 0;
     margin-left: 11px;
-    margin-right: 25px;
+    margin-right: 12px;
     border-top: 1px solid #d3d3d3;
     height: 66px; }
 .chatPage {
