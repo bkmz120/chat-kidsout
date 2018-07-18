@@ -1,3 +1,5 @@
+@import "common.scss";
+
 .chatPage {
   display:flex;
   width: 100%;
@@ -6,6 +8,10 @@
   &__contacts {
     width:320px;
     background-color: #eee;
+
+    @media (max-width: $screen-sm-max) {
+      display:none;
+    }
   }
 
   &__chatArea {

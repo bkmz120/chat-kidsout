@@ -1,0 +1,30 @@
+@import "colors.scss";
+
+.btn {
+  display:inline-block;
+  vertical-align:top;
+  padding:0 10px;
+  background-color: $green;
+  color: #fff;
+  font-size:15px;
+  font-weight:700;
+  line-height:36px;
+  border-radius:4px;
+  border:2px solid transparent;
+  cursor:pointer;
+
+  &:hover {
+    background-color: $greenHover;
+  }
+
+  &_disabled {
+    background-color: transparent;
+    border-color: #c7c7c7;
+    color: #c7c7c7;
+    cursor:default;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

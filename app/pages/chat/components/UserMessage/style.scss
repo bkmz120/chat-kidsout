@@ -1,4 +1,5 @@
 @import "colors.scss";
+@import "common.scss";
 
 .chatUserMessage {
   position:relative;
@@ -47,6 +48,10 @@
       color:#333;
       margin-right:10px;
       margin-left: 50px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      max-width: 180px;
     }
   }
 

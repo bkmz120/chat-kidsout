@@ -1,7 +1,7 @@
 @import "colors.scss";
+@import "common.scss";
 
 $collocutorBarHeight : 70px;
-$newMessageHeight : 66px;
 
 .chatArea {
   position:relative;
@@ -15,6 +15,11 @@ $newMessageHeight : 66px;
     margin-left:11px;
     margin-right:12px;
     background-color:$bgColor;
+
+    @media (max-width: $screen-sm-max) {
+      margin:0;
+      border-bottom:none;
+    }
   }
 
   &__messagesList {
@@ -22,7 +27,6 @@ $newMessageHeight : 66px;
     top:$collocutorBarHeight;
     left:0;
     right:0;
-    bottom:$newMessageHeight;
   }
 
   &__newMessage {
@@ -34,7 +38,7 @@ $newMessageHeight : 66px;
     margin-left:11px;
     margin-right:12px;
     border-top:1px solid #d3d3d3;
-    height:$newMessageHeight;
+
   }
 
 }

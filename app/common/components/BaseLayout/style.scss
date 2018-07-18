@@ -1,3 +1,5 @@
+@import "common.scss";
+
 .baseLayout {
   position:relative;
 
@@ -5,16 +7,34 @@
   &__navbar {
     position:absolute;
     background-color:#fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
     left:0;
     right:0;
     height:67px;
+    z-index:2;
+
+    @media (max-width: $screen-sm-max) {
+      display:none;
+    }
   }
 
   &__content {
+    position:relative;
+    z-index:1;
     width:1250px;
     height:100%;
     margin:0 auto;
     padding-top:67px;
     box-sizing: border-box;
+
+    @media (max-width: $screen-md-max) {
+      width:100%;
+      padding:0 20px;
+      padding-top:67px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      padding:0;
+    }
   }
 }

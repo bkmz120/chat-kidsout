@@ -25,6 +25,7 @@ export default class CollocutorBar extends Component {
         </div>
         <div className="collocutorBar__ctrls">
           <a href="#" className="collocutorBar__profileLink">Профиль ситтера</a>
+          <a href="#" className="collocutorBar__mobile-menu">...</a>
           <span className="collocutorBar__togglFav"></span>
         </div>
       </div>

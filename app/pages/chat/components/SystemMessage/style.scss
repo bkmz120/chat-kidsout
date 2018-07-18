@@ -1,4 +1,5 @@
 @import "colors.scss";
+@import "common.scss";
 
 .chatSystemMessage {
   text-align:center;
@@ -38,6 +39,10 @@
       &:before {
         background-color:$red;
       }
+    }
+
+    @media (max-width: $screen-xs-max) {
+      max-width: 230px;
     }
   }
 }
