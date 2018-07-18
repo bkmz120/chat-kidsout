@@ -23552,9 +23552,11 @@ var MessagesList = function (_Component) {
 
         var isFirst = true,
             isEnd = true;
+
         if (prevMessage !== undefined && prevMessage.type === this.props.messages[i].type) {
           isFirst = false;
         }
+
         if (nextMessage !== undefined && nextMessage.type === this.props.messages[i].type) {
           isEnd = false;
         }
@@ -25280,7 +25282,7 @@ var UserMessage = function (_Component) {
         isFirstClass = " chatUserMessage_first";
       }
       if (this.props.isEnd) {
-        isFirstClass = " chatUserMessage_end";
+        isEndClass = " chatUserMessage_end";
       }
 
       switch (this.props.message.type) {

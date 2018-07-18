@@ -50,9 +50,11 @@ export default class MessagesList extends Component {
       }
 
       let isFirst = true,isEnd = true;
+
       if (prevMessage!==undefined && prevMessage.type===this.props.messages[i].type) {
         isFirst = false;
       }
+
       if (nextMessage!==undefined && nextMessage.type===this.props.messages[i].type) {
         isEnd = false;
       }

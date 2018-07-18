@@ -11,7 +11,7 @@ export default class UserMessage extends Component {
       isFirstClass = " chatUserMessage_first";
     }
     if (this.props.isEnd) {
-      isFirstClass = " chatUserMessage_end";
+      isEndClass = " chatUserMessage_end";
     }
 
     switch (this.props.message.type) {
